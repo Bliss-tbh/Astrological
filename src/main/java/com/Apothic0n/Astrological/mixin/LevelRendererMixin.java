@@ -39,7 +39,7 @@ public class LevelRendererMixin {
      * @reason Custom sky effects.
      */
     @Overwrite
-    private void renderEndSky(PoseStack poseStack) {
+    public void renderEndSky(PoseStack poseStack) {
         ClientLevel level = Minecraft.getInstance().level;
         if (level != null) {
             RenderSystem.enableBlend();
